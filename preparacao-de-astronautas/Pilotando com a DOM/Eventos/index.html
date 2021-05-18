@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .green {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="changeBgColor()">Clique em mim</button> <!-- adicionando elementos via HTML -->
+  <input type="text">
+  <h1>Meu blog</h1>
+
+  <script>
+    function changeBgColor() {
+      let body = document.querySelector('body');
+      body.classList.toggle('green')
+    }
+
+    // Eventos de teclado
+    let input = document.querySelector('input');
+    input.onkeypress = function() {
+      let body = document.querySelector('body');
+      let div = document.createElement('div');
+      div.innerText = 'rodei'
+
+      body.append('rodei ')
+    }
+
+    // Adicionando eventos via JS
+    const h1 = document.querySelector('h1');
+
+    function print() {
+      console.log('print')
+    }
+
+    h1.addEventListener('click', print)
+    /* h1.addEventListener('click', print()) */ // executa imediatamente
+
+    // Nunca fazer da forma abaixo
+    /* h1.onclick = print
+
+    function print() {
+      console.log('print')
+    } // essa função será sobrescrita pela próxima
+
+    h1.onclick = function() {
+      console.log('Outro momento')
+    }
+
+    h1.addEventListener('click', function() {
+      console.log('outro momento')
+    }) */
+
+    // argumento event
+
+    input.onkeydown = function(event) {
+      console.log(event)
+    }
+  </script>
+</body>
+</html>

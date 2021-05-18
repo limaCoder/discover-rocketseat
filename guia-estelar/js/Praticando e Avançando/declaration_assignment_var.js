@@ -18,8 +18,11 @@ console.log(name, age, isHuman)
 
 // escrita de texto + variavéis
 
-// concatenando os valores
+// interpolação = juntar o texto escrito da string junto com uma expressão, que pode
+// tanto ser uma conta ${1 + 1} como uma variável em si ${soma}
+
+// concatenando os valores da forma antiga
 console.log('o ' + name + ' tem ' + age + ' anos.')
 
-// interpolando valores com template literals/ template strings
+// interpolando valores com template literals/template strings
 console.log(`o ${nome} tem ${age} anos.`)

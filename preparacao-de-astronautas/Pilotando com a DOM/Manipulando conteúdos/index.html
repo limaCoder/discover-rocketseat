@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Meu blog</h1>
+  <h2>Meu outro blog</h2>
+  <h3>Meu terceiro blog</h3>
+  <input type="text">
+  <h4 class='header'>Meu último blog</h4>
+
+  <script>
+    let element = document.querySelector('h1');
+    element.textContent = ' Olá devs!' // altero o conteúdo do texto
+
+    let element2 = document.querySelector('h2');
+    element2.innerText = 'Olá devs!'; // altero o conteúdo do texto
+
+    let element3 = document.querySelector('h3');
+    element3.innerHTML = 'Olá devs <small>!!!</small>' //altero o HTML
+    
+    let element4 = document.querySelector('input');
+    element4.value = 'Digite seu nome';
+
+    let element5 = document.querySelector('h4');
+    element5.setAttribute('id', 'header');
+    console.log(element5.getAttribute('id'))
+    element5.removeAttribute('class');
+
+  </script>
+</body>
+</html>

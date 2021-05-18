@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class=" flex-container container-1"> <!-- Flex container = pai --> 
+    <!-- por padrão é em row e nowrap --> 
+
+    <!-- Justify-Content alinha os items de acordo com a direção definida (caso row será horizontal) e 
+        Align-Items o eixo secundário -->
+
+    <!-- Flex items - os filhos diretos que se tornam filhos -->
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+  </div>
+
+  <div class="flex-container container-2">
+    <!-- a propriedade wrap irá quebrar as linhas caso ultrapasse a largura do elemento -->    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+    <div class="flex-item">7</div>
+    <div class="flex-item">8</div>
+  </div>
+
+  <div class="flex-container container-3">
+    <!-- Align-Content = quando há mais de uma linha de items, ele é usado para alinhar essas linhas de elementos entre si --> 
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+    <div class="flex-item">7</div>
+    <div class="flex-item">8</div>
+
+    <div class="flex-item">9</div>
+    <div class="flex-item">10</div>
+    <div class="flex-item">11</div>
+    <div class="flex-item">12</div>
+  </div>
+
+  <div class="flex-container container-4">
+    <!-- flex-grow = propriedade que define crescimento dos flex-items --> 
+    <!-- OBS: justify-content não funciona em items com flex-grow definido --> 
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+    <div class="flex-item">7</div>
+    <div class="flex-item">8</div>
+
+    <div class="flex-item">9</div>
+    <div class="flex-item">10</div>
+    <div class="flex-item grow-2">11</div>
+    <div class="flex-item grow-4">12</div>
+  </div>
+
+  <div class="flex-container container-4">
+    <!-- flex-basis = propriedade que padroniza o tamanho dos flex-items --> 
+    <!-- flex-basis: auto = padrão, se ajusta de acordo com o tamanho do conteúdo --> 
+    <!-- flex-basis: unidade = pode ser em %, em, px e etc --> 
+    <!-- flex-basis: 0 = vai tentar os flex-items do mesmo tamanho o máximo possível quebrando o conteúdo em linhas --> 
+    <div class="flex-item flex-basis">1</div>
+    <div class="flex-item flex-basis">2</div>
+    <div class="flex-item flex-basis">3</div>
+    <div class="flex-item flex-basis">4</div>
+ 
+    <div class="flex-item flex-basis">5</div>
+    <div class="flex-item flex-basis">6</div>
+    <div class="flex-item flex-basis">7</div>
+    <div class="flex-item flex-basis">8</div>
+ 
+    <div class="flex-item flex-basis">9</div>
+    <div class="flex-item flex-basis">10</div>
+    <div class="flex-item flex-basis">11</div>
+    <div class="flex-item flex-basis">12</div>
+  </div>
+
+  <div class="flex-container container-4">
+    <!-- flex-shrink = propriedade que define capacidade de redução do tamanho dos flex-items --> 
+    <!-- flex-shrink: 1 = padrão, permite que os items tenham os seus tamanhos (sejam esses definidos por width ou flex-basis) reduzidos para caber no container --> 
+    <!-- flex-shrink: 0 = não permite a redução, assim um item com flex-basis: 300px; nunca diminuirá menos do que 300px, mesmo que o conteúdo não ocupe todo esse espaço --> 
+    <!-- flex-shrink: número // um item shrink: 3 diminuirá 3 vezes mais que um item com 1 --> 
+    <div class="flex-item flex-basis">1</div>
+    <div class="flex-item flex-basis">2</div>
+    <div class="flex-item flex-basis">3</div>
+    <div class="flex-item flex-basis">4</div>
+ 
+    <div class="flex-item flex-basis">5</div>
+    <div class="flex-item flex-basis">6</div>
+    <div class="flex-item flex-basis">7</div>
+    <div class="flex-item flex-basis">8</div>
+ 
+    <div class="flex-item flex-basis">9</div>
+    <div class="flex-item flex-basis">10</div>
+    <div class="flex-item flex-basis shrink-4">11</div>
+    <div class="flex-item flex-basis shrink-2">12</div>
+  </div>
+
+  <div class="flex-container container-1">
+    <!-- order e align-self = altera flex-items individuais --> 
+    <div style="order: 3" class="flex-item">1</div>
+    <div style="order: 2; align-self: center;" class="flex-item">2</div>
+    <div style="order: 4" class="flex-item">3</div>
+    <div style="order: 1" class="flex-item">4</div>
+  </div>
+
+</body>
+</html>

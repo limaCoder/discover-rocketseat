@@ -9,11 +9,11 @@
   //código
 } // aqui fechamos o bloco
 
-O bloco, também criará um novo escopo. Chamamaos de 
+O bloco, também criará um novo escopo. Chamamos de 
 'block-scoped'
 
 ## var
-// var é gloval e, também local
+// var é global e, também local
 // var é global e poderá funcionar fora de um escopo de bloco
 // var x [2] 
 console.log('existe x antes do bloco? ', x)
@@ -59,4 +59,3 @@ let y = 2;
 }
 
 console.log('> existe y depois do bloco?', y)
-

@@ -29,12 +29,12 @@ function create() {
 
 }
 
-// armazenando em uma constante, sendo chamada assim de função anônima
+// armazenando em uma constante, sendo chamada assim de função anônima / function expression
 const create = function() {
 
 }
 
-// ou com arrow function
+// ou com arrow function / também chanada de express function
 const create = () => {
 
 }
@@ -65,3 +65,17 @@ function soma(a, b = 0 /* definindo um valor padrão*/ ){
 console.log(soma(2, 3))
 console.log(soma(2)) // 2 + 0 = 2 
 console.log(soma()) // Como 'a' não teve um valor padrão definido, diferente de 'b', o resultado é NaN
+
+const sum = function(number1, number2) {
+  total = number1 + number2; // não faça isso, sempre usar a palavra chave de variável antes, como let ou const
+  return total
+}
+
+
+// Função é um liquidificador
+function fazerSuco(suco1, suco2) {
+  return 'fazer suco de:' + suco1 + suco2;
+}
+
+const copo = fazerSuco('banana', 'maça')
+console.log(copo)

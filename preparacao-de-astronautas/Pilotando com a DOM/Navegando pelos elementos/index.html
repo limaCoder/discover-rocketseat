@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Meu blog</h1>
+  </header>
+
+  <script>
+    // Navegando pelos elementos pai
+    // parentNode parentElement
+    const element = document.querySelector('h1');
+
+    console.log(element.parentNode)
+    console.log(element.parentElement)
+
+    // Navegando pelos elementos filhos
+    // childNodes children
+
+    console.log(element.children)
+    console.log(element.childNodes)
+
+    // firstChild firstElementChild
+
+    console.log(element.firstChild)
+    console.log(element.firstElementChild)
+
+    // lastChild lastElementChild
+
+    console.log(element.lastChild)
+    console.log(element.lastElementChild)
+
+    // navegando pelos elementos Irmãos
+    // nextSibling nextElementSibling
+
+    console.log(element.nextSibling)
+    console.log(element.nextElementSibling)
+
+    // previousSibling previousElementSibling
+
+    console.log(element.previousSibling)
+    console.log(element.previousElementSibling)
+
+    // parentNode, childNodes, firstChild, lastChild, nextSibling e previousSibling são NodeLists
+    // que consideram os espaços como textos
+    // parentElement, children, firstElementChild, lastElementChild, nextElementSibling e previousElementSibling
+    // são HTMLCollection e só consideram os elementos HTML sem os espaços no código. use eles
+  </script>
+</body>
+</html>
