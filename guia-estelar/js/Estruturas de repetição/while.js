@@ -15,4 +15,4 @@ while (i > 10) {
   i/= 35
 }
 
-// usamos o while quando não sabemos o momento da parada. Exi
+// usamos o while quando não sabemos o momento da parada.
