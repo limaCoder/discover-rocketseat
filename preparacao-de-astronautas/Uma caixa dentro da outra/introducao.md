@@ -43,7 +43,7 @@ div {
 - Comportamento externo das caixas
 
 **block**
-- Ocupa toda a linha, colocnado o próximo elemento abaixo desse
+- Ocupa toda a linha, colocando o próximo elemento abaixo desse
 - width e height são respeitados
 - padding, margin, border irão funcionar normalmente.
 

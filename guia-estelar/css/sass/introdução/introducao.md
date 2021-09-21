@@ -7,7 +7,7 @@
 
 # Vantagens
   * Funções
-  * Variaáveis
+  * Variáveis
   * Facilidades com pseudo elements e estados
   * Melhora a compatibilidade dos browser (-moz -webkit)
 
