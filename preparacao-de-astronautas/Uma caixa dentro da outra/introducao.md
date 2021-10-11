@@ -37,7 +37,7 @@ div {
 ```
 --------------------------------------------------------------------------------
 
-## display: block vs display: inline
+## display:block vs display:inline
 
 - Como as coisas se comportam em relação às outras cauxas
 - Comportamento externo das caixas
