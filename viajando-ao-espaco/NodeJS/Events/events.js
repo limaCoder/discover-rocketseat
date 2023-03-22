@@ -19,7 +19,7 @@ ev.emit('saySomething', 'Vic')
 
 class Character extends EventEmitter {
   constructor(name) {
-    super()
+    super() // puxando atributos e métodos do pai
     this.name = name;
   }
 }
